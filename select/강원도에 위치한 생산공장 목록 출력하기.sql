@@ -1,0 +1,9 @@
+SELECT FACTORY_ID, FACTORY_NAME, ADDRESS
+FROM FOOD_FACTORY
+WHERE ADDRESS LIKE '강원도%'
+
+/*
+LIKE
+% : 0개 이상의 문자 표현
+_ : 1개의 문자 표현
+*/
