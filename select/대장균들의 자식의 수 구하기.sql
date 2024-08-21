@@ -5,3 +5,8 @@ FROM ECOLI_DATA A LEFT JOIN (
     GROUP BY PARENT_ID
     HAVING PARENT_ID IS NOT NULL
 ) B ON A.ID = B.PARENT_ID
+
+/*
+    부모의 정보를 기준으로 그룹화
+    존재하는 COUNT 값이면 그대로, null 이면 0
+*/
